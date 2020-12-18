@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_kinesiology_cash_movements,kinesiology_cash_movements,model_kinesiology_cash_movements,,1,1,1,1
+access_kinesiology_diagnoses,kinesiology_diagnoses,model_kinesiology_diagnoses,,1,1,1,1
+access_kinesiology_health_insurance,kinesiology_health_insurance,model_kinesiology_health_insurance,,1,1,1,1
+access_kinesiology_institutions,kinesiology_institutions,model_kinesiology_institutions,,1,1,1,1
+access_kinesiology_localities,kinesiology_localities,model_kinesiology_localities,,1,1,1,1
+access_kinesiology_medical_offices,kinesiology_medical_offices,model_kinesiology_medical_offices,,1,1,1,1
+access_kinesiology_patients,kinesiology_patients,model_kinesiology_patients,,1,1,1,1
+access_kinesiology_professionals,kinesiology_professionals,model_kinesiology_professionals,,1,1,1,1
+access_kinesiology_records,kinesiology_records,model_kinesiology_records,,1,1,1,1
+access_kinesiology_treatments,kinesiology_treatments,model_kinesiology_treatments,,1,1,1,1
+access_kinesiology_turns,kinesiology_turns,model_kinesiology_turns,,1,1,1,1

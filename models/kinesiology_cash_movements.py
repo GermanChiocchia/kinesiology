@@ -2,8 +2,8 @@
 from odoo import api, exceptions, fields, models
 
 
-class KinesiologyCashMovement(models.Model):
-    _name = 'kinesiology.cash.movement'
+class KinesiologyCashMovements(models.Model):
+    _name = 'kinesiology.cash.movements'
     _description = 'Cash movement'
 
     fecha = fields.Date(string = u'Fecha'),
