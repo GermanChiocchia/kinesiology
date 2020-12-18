@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="timeframe_data_lunes" model="appointments.timeframe">
+            <field name="day">Lunes</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="enabled" eval="True"/>
+        </record>
+            
+        <record id="timeframe_data_martes" model="appointments.timeframe">
+            <field name="day">Martes</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="enabled" eval="True"/>
+        </record>
+
+        <record id="timeframe_data_miercoles" model="appointments.timeframe">
+            <field name="day">Miercoles</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="enabled" eval="True"/>
+        </record>
+
+        <record id="timeframe_data_jueves" model="appointments.timeframe">
+            <field name="day">Jueves</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="enabled" eval="True"/>
+        </record>
+
+        <record id="timeframe_data_viernes" model="appointments.timeframe">
+            <field name="day">Viernes</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="enabled" eval="True"/>
+        </record>
+
+        <record id="timeframe_data_sabado" model="appointments.timeframe">
+            <field name="day">Sabado</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="enabled" eval="True"/>
+        </record>
+
+        <record id="timeframe_data_domingo" model="appointments.timeframe">
+            <field name="day">Domingo</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="enabled" eval="True"/>
+        </record>
+    </data>
+</odoo>
