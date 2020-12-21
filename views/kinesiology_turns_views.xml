@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="kinesiology_turns_view_form" model="ir.ui.view">
+            <field name="name">kinesiology.turns.view.form</field>
+            <field name="model">kinesiology.turns</field>
+            <field name="arch" type="xml">
+                <form string="Movimientos turns">
+                    <header>
+                    
+                    </header>
+                    <sheet>
+                        <div>
+                            <label for="fecha" class="oe_edit_only"/>
+                            <h1><field name="fecha" /></h1>
+                        </div>
+                        <notebook>
+                            <page string="">
+                                <group col="" string="">
+                                    <field name="" />
+                                    <field name="" />
+                                    <field name="" />
+                                    <field name="" />
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="kinesiology_turns_view_tree" model="ir.ui.view">
+            <field name="name">kinesiology.turns.view.tree</field>
+            <field name="model">kinesiology.turns</field>
+            <field name="arch" type="xml">
+                <tree string="" sample="1">
+                    <field name="" />
+                    <field name="" />
+                    <field name="" />
+                    <field name="" />
+                </tree>
+            </field>
+        </record>
+        
+        <record id="kinesiology_turns_view_search" model="ir.ui.view">
+            <field name="name">kinesiology.turns.view.search</field>
+            <field name="model">kinesiology.turns</field>
+            <field name="arch" type="xml">
+                <search string=''>
+                    <field name="" />
+                    <filter string="" name="" domain="[('', '',)]"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_kinesiology_turns_act_window" model="ir.actions.act_window">
+            <field name="type">ir.actions.act_window</field>
+            <field name="name">turns</field>
+            <field name="res_model">kinesiology.turns</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Empty</p>
+            </field>
+            <field name="target">current</field>
+        </record>
+    </data>
+</odoo>
