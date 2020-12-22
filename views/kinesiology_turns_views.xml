@@ -5,22 +5,24 @@
             <field name="name">kinesiology.turns.view.form</field>
             <field name="model">kinesiology.turns</field>
             <field name="arch" type="xml">
-                <form string="Movimientos turns">
+                <form string="Turnos">
                     <header>
                     
                     </header>
                     <sheet>
                         <div>
-                            <label for="fecha" class="oe_edit_only"/>
-                            <h1><field name="fecha" /></h1>
+                            <label for="inicio" class="oe_edit_only"/>
+                            <h1><field name="inicio" /></h1>
                         </div>
                         <notebook>
-                            <page string="">
-                                <group col="" string="">
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
+                            <page string="Datos de turnos">
+                                <group col="4" string="Datos">
+                                    <field name="cantidad" />
+                                    <field name="horario" />
+                                    <field name="estado" />
+                                    <field name="dia" />
+                                    <field name="ficha_id" />
+                                    <field name="paciente_id" />
                                 </group>
                             </page>
                         </notebook>
@@ -33,11 +35,14 @@
             <field name="name">kinesiology.turns.view.tree</field>
             <field name="model">kinesiology.turns</field>
             <field name="arch" type="xml">
-                <tree string="" sample="1">
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
+                <tree string="Turnos" sample="1">
+                    <field name="inicio" />
+                    <field name="cantidad" />
+                    <field name="horario" />
+                    <field name="estado" />
+                    <field name="dia" />
+                    <field name="ficha_id" />
+                    <field name="paciente_id" />
                 </tree>
             </field>
         </record>
@@ -46,14 +51,14 @@
             <field name="name">kinesiology.turns.view.search</field>
             <field name="model">kinesiology.turns</field>
             <field name="arch" type="xml">
-                <search string=''>
-                    <field name="" />
-                    <filter string="" name="" domain="[('', '',)]"/>
+                <search string="Turnos">
+                    <field name="estado" />
+                    <filter string="Pendientes" name="Pendientes" domain="[('estado', '=', pendiente)]"/>
                 </search>
             </field>
         </record>
 
-        <record id="action_kinesiology_turns_act_window" model="ir.actions.act_window">
+        <record id="kinesiology_turns_action_act_window" model="ir.actions.act_window">
             <field name="type">ir.actions.act_window</field>
             <field name="name">turns</field>
             <field name="res_model">kinesiology.turns</field>

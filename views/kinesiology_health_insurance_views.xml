@@ -5,22 +5,15 @@
             <field name="name">kinesiology.health.insurance.view.form</field>
             <field name="model">kinesiology.health.insurance</field>
             <field name="arch" type="xml">
-                <form string="Movimientos de dinero">
+                <form string="Obra social">
                     <header>
                     
                     </header>
                     <sheet>
-                        <div>
-                            <label for="fecha" class="oe_edit_only"/>
-                            <h1><field name="fecha" /></h1>
-                        </div>
                         <notebook>
-                            <page string="">
-                                <group col="" string="">
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
+                            <page string="Datos de Obra social">
+                                <group string="Datos">
+                                    <field name="name" />
                                 </group>
                             </page>
                         </notebook>
@@ -33,11 +26,8 @@
             <field name="name">kinesiology.health.insurance.view.tree</field>
             <field name="model">kinesiology.health.insurance</field>
             <field name="arch" type="xml">
-                <tree string="" sample="1">
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
+                <tree string="Obra social" sample="1">
+                    <field name="name" />
                 </tree>
             </field>
         </record>
@@ -46,14 +36,14 @@
             <field name="name">kinesiology.health.insurance.view.search</field>
             <field name="model">kinesiology.health.insurance</field>
             <field name="arch" type="xml">
-                <search string=''>
-                    <field name="" />
-                    <filter string="" name="" domain="[('', '',)]"/>
+                <search string="Obra social">
+                    <field name="name" />
+                    <filter string="Sin nombre" name="Sin nombre" domain="[('name', '=', None)]"/>
                 </search>
             </field>
         </record>
 
-        <record id="action_kinesiology_health_insurance_act_window" model="ir.actions.act_window">
+        <record id="kinesiology_health_insurance_action_act_window" model="ir.actions.act_window">
             <field name="type">ir.actions.act_window</field>
             <field name="name">health_insurance</field>
             <field name="res_model">kinesiology.health.insurance</field>

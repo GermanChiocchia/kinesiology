@@ -15,12 +15,11 @@
                             <h1><field name="fecha" /></h1>
                         </div>
                         <notebook>
-                            <page string="">
-                                <group col="" string="">
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
+                            <page string="Detalles">
+                                <group col="4" string="Detalles del movimiento">
+                                    <field name="motivo" />
+                                    <field name="monto" />
+                                    <field name="tipo" />
                                 </group>
                             </page>
                         </notebook>
@@ -33,11 +32,11 @@
             <field name="name">kinesiology.cash.movements.view.tree</field>
             <field name="model">kinesiology.cash.movements</field>
             <field name="arch" type="xml">
-                <tree string="" sample="1">
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
+                <tree string="Movimientos de dinero" sample="1">
+                    <field name="fecha" />
+                    <field name="motivo" />
+                    <field name="monto" />
+                    <field name="tipo" />
                 </tree>
             </field>
         </record>
@@ -46,14 +45,19 @@
             <field name="name">kinesiology.cash.movements.view.search</field>
             <field name="model">kinesiology.cash.movements</field>
             <field name="arch" type="xml">
-                <search string=''>
-                    <field name="" />
-                    <filter string="" name="" domain="[('', '',)]"/>
+                <search string='Movimientos de dinero'>
+                    <field name="fecha" />
+                    <field name="motivo" />
+                    <field name="monto" />
+                    <field name="tipo" />
+                    <filter string="Sin fecha" name="Sin fecha" domain="[('fecha', '=', None)]"/>
+                    <filter string="Monto minimo" name="Monto minimo" domain="[('monto', '<=', 100)]"/>
+                    <filter string="Ingreso de dinero" name="Ingreso" domain="[('tipo', '=', ingreso)]"/>
                 </search>
             </field>
         </record>
 
-        <record id="action_kinesiology_cash_movements_act_window" model="ir.actions.act_window">
+        <record id="kinesiology_cash_movements_action_act_window" model="ir.actions.act_window">
             <field name="type">ir.actions.act_window</field>
             <field name="name">cash_movements</field>
             <field name="res_model">kinesiology.cash.movements</field>

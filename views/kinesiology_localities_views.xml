@@ -5,22 +5,19 @@
             <field name="name">kinesiology.localities.view.form</field>
             <field name="model">kinesiology.localities</field>
             <field name="arch" type="xml">
-                <form string="Movimientos localities">
+                <form string="Localidades">
                     <header>
                     
                     </header>
                     <sheet>
                         <div>
-                            <label for="fecha" class="oe_edit_only"/>
-                            <h1><field name="fecha" /></h1>
+                            <label for="name" class="oe_edit_only"/>
+                            <h1><field name="name" /></h1>
                         </div>
                         <notebook>
-                            <page string="">
-                                <group col="" string="">
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
+                            <page string="Datos localidad">
+                                <group col="4" string="Datos">
+                                    <field name="postal"/>
                                 </group>
                             </page>
                         </notebook>
@@ -33,11 +30,9 @@
             <field name="name">kinesiology.localities.view.tree</field>
             <field name="model">kinesiology.localities</field>
             <field name="arch" type="xml">
-                <tree string="" sample="1">
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
+                <tree string="Localidades" sample="1">
+                    <field name="name" />
+                    <field name="postal" />
                 </tree>
             </field>
         </record>
@@ -46,14 +41,14 @@
             <field name="name">kinesiology.localities.view.search</field>
             <field name="model">kinesiology.localities</field>
             <field name="arch" type="xml">
-                <search string=''>
-                    <field name="" />
-                    <filter string="" name="" domain="[('', '',)]"/>
+                <search string="Localidades">
+                    <field name="name" />
+                    <filter string="Sin nombre" name="Sin nombre" domain="[('name', '=', None)]"/>
                 </search>
             </field>
         </record>
 
-        <record id="action_kinesiology_localities_act_window" model="ir.actions.act_window">
+        <record id="kinesiology_localities_action_act_window" model="ir.actions.act_window">
             <field name="type">ir.actions.act_window</field>
             <field name="name">localities</field>
             <field name="res_model">kinesiology.localities</field>

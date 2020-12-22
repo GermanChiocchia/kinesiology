@@ -5,22 +5,20 @@
             <field name="name">kinesiology.treatments.view.form</field>
             <field name="model">kinesiology.treatments</field>
             <field name="arch" type="xml">
-                <form string="Movimientos treatments">
+                <form string="Tratamientos">
                     <header>
                     
                     </header>
                     <sheet>
                         <div>
-                            <label for="fecha" class="oe_edit_only"/>
-                            <h1><field name="fecha" /></h1>
+                            <label for="codigo" class="oe_edit_only"/>
+                            <h1><field name="codigo" /></h1>
                         </div>
                         <notebook>
-                            <page string="">
-                                <group col="" string="">
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
+                            <page string="Datos tratamiento">
+                                <group col="4" string="Datos">
+                                    <field name="descripcion" />
+                                    <field name="precio" />
                                 </group>
                             </page>
                         </notebook>
@@ -33,11 +31,10 @@
             <field name="name">kinesiology.treatments.view.tree</field>
             <field name="model">kinesiology.treatments</field>
             <field name="arch" type="xml">
-                <tree string="" sample="1">
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
+                <tree string="Tratamientos" sample="1">
+                    <field name="codigo" />
+                    <field name="descripcion" />
+                    <field name="precio" />
                 </tree>
             </field>
         </record>
@@ -46,14 +43,14 @@
             <field name="name">kinesiology.treatments.view.search</field>
             <field name="model">kinesiology.treatments</field>
             <field name="arch" type="xml">
-                <search string=''>
-                    <field name="" />
-                    <filter string="" name="" domain="[('', '',)]"/>
+                <search string="Tratamientos">
+                    <field name="codigo" />
+                    <filter string="Sin codigo" name="Sin codigo" domain="[('codigo', '=', None)]"/>
                 </search>
             </field>
         </record>
 
-        <record id="action_kinesiology_treatments_act_window" model="ir.actions.act_window">
+        <record id="kinesiology_treatments_action_act_window" model="ir.actions.act_window">
             <field name="type">ir.actions.act_window</field>
             <field name="name">treatments</field>
             <field name="res_model">kinesiology.treatments</field>

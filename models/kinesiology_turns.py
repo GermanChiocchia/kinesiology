@@ -12,3 +12,4 @@ class KinesiologyTurns(models.Model):
     cantidad = fields.Integer(string='Cantidad')
     horario = fields.Datetime(string='Horario')
     dia = fields.Char(string='Dia')
+    estado = fields.Selection(string='Estado', selection=[('pendiente', 'Pendiente'),('realizado', 'Realizado')], default='pendiente')

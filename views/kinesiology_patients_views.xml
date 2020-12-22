@@ -5,22 +5,26 @@
             <field name="name">kinesiology.patients.view.form</field>
             <field name="model">kinesiology.patients</field>
             <field name="arch" type="xml">
-                <form string="Movimientos patients">
+                <form string="Pacientes">
                     <header>
                     
                     </header>
                     <sheet>
                         <div>
-                            <label for="fecha" class="oe_edit_only"/>
-                            <h1><field name="fecha" /></h1>
+                            <label for="name" class="oe_edit_only"/>
+                            <h1><field name="name" /></h1>
                         </div>
                         <notebook>
-                            <page string="">
-                                <group col="" string="">
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
-                                    <field name="" />
+                            <page string="Datos">
+                                <group col="4" string="Datos pacientes">
+                                    <field name="apellido" />
+                                    <field name="documento" />
+                                    <field name="nacimiento" />
+                                    <field name="domicilio" />
+                                    <field name="telefono" />
+                                    <field name="localidad_id" />
+                                    <field name="social_id" />
+                                    <field name="profesional_id" />
                                 </group>
                             </page>
                         </notebook>
@@ -33,11 +37,16 @@
             <field name="name">kinesiology.patients.view.tree</field>
             <field name="model">kinesiology.patients</field>
             <field name="arch" type="xml">
-                <tree string="" sample="1">
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
-                    <field name="" />
+                <tree string="Pacientes" sample="1">
+                    <field name="name" />
+                    <field name="apellido" />
+                    <field name="documento" />
+                    <field name="nacimiento" />
+                    <field name="domicilio" />
+                    <field name="telefono" />
+                    <field name="localidad_id" />
+                    <field name="social_id" />
+                    <field name="profesional_id" />
                 </tree>
             </field>
         </record>
@@ -46,14 +55,19 @@
             <field name="name">kinesiology.patients.view.search</field>
             <field name="model">kinesiology.patients</field>
             <field name="arch" type="xml">
-                <search string=''>
-                    <field name="" />
-                    <filter string="" name="" domain="[('', '',)]"/>
+                <search string="Pacientes">
+                    <field name="name" />
+                    <field name="apellido" />
+                    <field name="documento" />
+                    <field name="nacimiento" />
+                    <field name="domicilio" />
+                    <field name="telefono" />
+                    <filter string="Sin nombre" name="Sin nombre" domain="[('name', '=', None)]"/>
                 </search>
             </field>
         </record>
 
-        <record id="action_kinesiology_patients_act_window" model="ir.actions.act_window">
+        <record id="kinesiology_patients_action_act_window" model="ir.actions.act_window">
             <field name="type">ir.actions.act_window</field>
             <field name="name">patients</field>
             <field name="res_model">kinesiology.patients</field>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="kinesiology_root_menu" name="Kinesiology"/>
+
+        <menuitem id="kinesiology_archivo_menu" name="Archivo" parent="kinesiology_root_menu"/>
+        <menuitem id="kinesiology_paciente_menu" name="Paciente" parent="kinesiology_root_menu"/>
+        <menuitem id="kinesiology_turnos_menu" name="Turnos" parent="kinesiology_root_menu"/>
+        <menuitem id="kinesiology_facturacion_menu" name="Facturación" parent="kinesiology_root_menu"/>
+        <menuitem id="kinesiology_herramientas_menu" name="Herramientas" parent="kinesiology_root_menu"/>
+        <menuitem id="kinesiology_ayuda_menu" name="Ayuda" parent="kinesiology_root_menu"/>
+
+        <menuitem id="kinesiology_medical_offices_sub_menu" name="Consultorio" parent="kinesiology_archivo_menu" action="kinesiology_medical_offices_action_act_window"/>
+        <menuitem id="kinesiology_diagnoses_sub_menu" name="Diagnosticos" parent="kinesiology_archivo_menu" action="kinesiology_diagnoses_action_act_window"/>
+        <menuitem id="kinesiology_health_insurance_sub_menu" name="Obras sociales" parent="kinesiology_archivo_menu" action="kinesiology_health_insurance_action_act_window"/>
+        <menuitem id="kinesiology_localities_sub_menu" name="Localidades" parent="kinesiology_archivo_menu" action="kinesiology_localities_action_act_window"/>
+        <menuitem id="kinesiology_professionals_sub_menu" name="Profesionales" parent="kinesiology_archivo_menu" action="kinesiology_professionals_action_act_window"/>
+        <!-- <menuitem id="kinesiology_formularios_sub_menu" name="Formularios" parent="kinesiology_archivo_menu" action="kinesiology__action_act_window"/>
+        <menuitem id="kinesiology_medicos_derivantes_sub_menu" name="Medicos derivantes" parent="kinesiology_archivo_menu" action="kinesiology__action_act_window"/> -->
+
+        <menuitem id="kinesiology_patients_sub_menu" name="Pacientes" parent="kinesiology_paciente_menu" action="kinesiology_patients_action_act_window"/>
+
+        <menuitem id="kinesiology_turns_sub_menu" name="Turnos" parent="kinesiology_turnos_menu" action="kinesiology_turns_action_act_window"/>
+
+        <menuitem id="kinesiology_cash_movements_sub_menu" name="Movimientos de caja y banco" parent="kinesiology_facturacion_menu" action="kinesiology_cash_movements_action_act_window"/>
+        <menuitem id="kinesiology_treatments_sub_menu" name="Tratamientos" parent="kinesiology_facturacion_menu" action="kinesiology_treatments_action_act_window"/>
+        <menuitem id="kinesiology_res_company_sub_menu" name="Instituciones" parent="kinesiology_facturacion_menu" action="base.action_res_company_form"/>
+    </data>
+</odoo>
