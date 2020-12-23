@@ -11,5 +11,5 @@ class KinesiologyTurns(models.Model):
     inicio = fields.Date(string='Fecha inicio')
     cantidad = fields.Integer(string='Cantidad')
     horario = fields.Datetime(string='Horario')
-    dia = fields.Char(string='Dia')
     estado = fields.Selection(string='Estado', selection=[('pendiente', 'Pendiente'),('realizado', 'Realizado')], default='pendiente')
+    timeframes_ids = fields.One2many(string=u'Horarios',comodel_name='kinesiology.timeframes',inverse_name='company_id')

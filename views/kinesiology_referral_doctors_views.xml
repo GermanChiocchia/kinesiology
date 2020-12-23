@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="kinesiology_referral_doctors_view_form" model="ir.ui.view">
+            <field name="name">kinesiology.referral.doctors.view.form</field>
+            <field name="model">kinesiology.referral.doctors</field>
+            <field name="arch" type="xml">
+                <form string="Medicos derivantes">
+                    <header>
+                    
+                    </header>
+                    <sheet>
+                        <notebook>
+                            <page string="Datos medicos derivantes">
+                                <group string="Datos">
+                                    <field name="name" />
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="kinesiology_diagnoses_view_tree" model="ir.ui.view">
+            <field name="name">kinesiology.referral.doctors.view.tree</field>
+            <field name="model">kinesiology.referral.doctors</field>
+            <field name="arch" type="xml">
+                <tree string="Medicos derivantes" sample="1">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="kinesiology_referral_doctors_view_search" model="ir.ui.view">
+            <field name="name">kinesiology.referral.doctors.view.search</field>
+            <field name="model">kinesiology.referral.doctors</field>
+            <field name="arch" type="xml">
+                <search string='Medicos derivantes'>
+                    <field name="name"/>
+                    <filter string="Sin nombre" name="Sin nombre" domain="[('name', '=', None)]"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="kinesiology_referral_doctors_action_act_window" model="ir.actions.act_window">
+            <field name="type">ir.actions.act_window</field>
+            <field name="name">referral doctors</field>
+            <field name="res_model">kinesiology.referral.doctors</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Empty</p>
+            </field>
+            <field name="target">current</field>
+        </record>
+    </data>
+</odoo>

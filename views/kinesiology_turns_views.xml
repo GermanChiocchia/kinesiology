@@ -20,9 +20,18 @@
                                     <field name="cantidad" />
                                     <field name="horario" />
                                     <field name="estado" />
-                                    <field name="dia" />
                                     <field name="ficha_id" />
                                     <field name="paciente_id" />
+                                </group>
+                            </page>
+                            <page string='Dias' >
+                                <group string='Dias de turno'>
+                                    <field name="timeframes_ids" nolabel='1'>
+                                        <tree create="true" delete="true" edit="true" editable="bottom">
+                                            <field name="day" />
+                                            <field name="enabled" />
+                                        </tree>
+                                    </field>
                                 </group>
                             </page>
                         </notebook>
@@ -40,9 +49,9 @@
                     <field name="cantidad" />
                     <field name="horario" />
                     <field name="estado" />
-                    <field name="dia" />
                     <field name="ficha_id" />
                     <field name="paciente_id" />
+                    <field name="timeframes_ids" />
                 </tree>
             </field>
         </record>

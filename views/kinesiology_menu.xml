@@ -15,8 +15,7 @@
         <menuitem id="kinesiology_health_insurance_sub_menu" name="Obras sociales" parent="kinesiology_archivo_menu" action="kinesiology_health_insurance_action_act_window"/>
         <menuitem id="kinesiology_localities_sub_menu" name="Localidades" parent="kinesiology_archivo_menu" action="kinesiology_localities_action_act_window"/>
         <menuitem id="kinesiology_professionals_sub_menu" name="Profesionales" parent="kinesiology_archivo_menu" action="kinesiology_professionals_action_act_window"/>
-        <!-- <menuitem id="kinesiology_formularios_sub_menu" name="Formularios" parent="kinesiology_archivo_menu" action="kinesiology__action_act_window"/>
-        <menuitem id="kinesiology_medicos_derivantes_sub_menu" name="Medicos derivantes" parent="kinesiology_archivo_menu" action="kinesiology__action_act_window"/> -->
+        <menuitem id="kinesiology_referring_doctors_sub_menu" name="Medicos derivantes" parent="kinesiology_archivo_menu" action="kinesiology_referral_doctors_action_act_window"/>
 
         <menuitem id="kinesiology_patients_sub_menu" name="Pacientes" parent="kinesiology_paciente_menu" action="kinesiology_patients_action_act_window"/>
 

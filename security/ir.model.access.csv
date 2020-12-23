@@ -10,3 +10,4 @@ access_kinesiology_professionals,kinesiology_professionals,model_kinesiology_pro
 access_kinesiology_records,kinesiology_records,model_kinesiology_records,,1,1,1,1
 access_kinesiology_treatments,kinesiology_treatments,model_kinesiology_treatments,,1,1,1,1
 access_kinesiology_turns,kinesiology_turns,model_kinesiology_turns,,1,1,1,1
+access_kinesiology_referral_doctors,kinesiology_referral_doctors,model_kinesiology_referral_doctors,,1,1,1,1
